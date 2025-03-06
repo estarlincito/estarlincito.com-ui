@@ -9,7 +9,7 @@ import {
   Text,
 } from '@radix-ui/themes';
 
-import { Wrapper } from '../../layouts';
+import { Wrapper } from '@/shared-ui';
 
 export interface Props {
   error: Error;

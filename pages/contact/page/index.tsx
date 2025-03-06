@@ -1,6 +1,5 @@
-import { Container } from '@radix-ui/themes';
+import { Container, Wrapper } from '@/shared-ui';
 
-import { Wrapper } from './../../../layouts';
 import ContactForm from './form';
 
 export const ContactPage = () => {

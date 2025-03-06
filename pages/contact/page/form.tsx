@@ -2,8 +2,8 @@
 import { Box, Flex } from '@radix-ui/themes';
 import { useForm } from 'react-hook-form';
 
-import { Breadcrumb, Summary, Title } from '../../../components';
-import { Form } from '../../../layouts/form';
+import { Breadcrumb, Form, Summary, Title } from '@/shared-ui';
+
 import onSubmit from './submit';
 
 export type InputContact = {

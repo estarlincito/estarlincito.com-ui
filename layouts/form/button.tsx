@@ -1,13 +1,12 @@
 import * as Form from '@radix-ui/react-form';
 import { Button as RadixButton } from '@radix-ui/themes';
-import React from 'react';
 
-interface ButtonProps {
+interface Props {
   disabled?: boolean;
   label: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ disabled, label }) => {
+const Button = ({ disabled, label }: Props) => {
   return (
     <Form.Submit asChild>
       <RadixButton

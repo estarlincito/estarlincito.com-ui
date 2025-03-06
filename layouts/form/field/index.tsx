@@ -3,11 +3,7 @@ import * as Form from '@radix-ui/react-form';
 import { InfoCircledIcon } from '@radix-ui/react-icons';
 import { Box, Flex, TextArea, TextField } from '@radix-ui/themes';
 import stylez from '@stylezjs/stylez';
-import {
-  type FieldValues,
-  type Path,
-  type UseFormRegister,
-} from 'react-hook-form';
+import type { FieldValues, Path, UseFormRegister } from 'react-hook-form';
 
 const styles = {
   field: stylez.create({

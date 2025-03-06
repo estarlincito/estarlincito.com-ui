@@ -1,12 +1,12 @@
 import { Flex } from '@radix-ui/themes';
 import React from 'react';
 
-interface WrapperProps {
+interface Props {
   children: React.ReactNode;
   align?: 'center' | 'start' | 'end' | 'baseline' | 'stretch';
 }
 
-export const Wrapper = (props: WrapperProps) => {
+export const Wrapper = (props: Props) => {
   return (
     <Flex
       direction='column'

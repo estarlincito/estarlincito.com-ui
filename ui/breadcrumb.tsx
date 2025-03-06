@@ -1,5 +1,7 @@
+'use client';
 import { Box, Flex, Link, Strong, Text } from '@radix-ui/themes';
 import stylez from '@stylezjs/stylez';
+import { usePathname } from 'next/navigation';
 
 type Color =
   | (
@@ -49,7 +51,7 @@ const styles = stylez.create({
 });
 
 export const Breadcrumb = ({ slug, color }: Props) => {
-  const pathname = '';
+  const pathname = usePathname();
   const [firstSlug, secondSlug, thirdSlug] = slug;
   return (
     <Flex align='center' gap='1'>

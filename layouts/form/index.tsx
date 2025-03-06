@@ -1,9 +1,16 @@
 import * as RadixForm from '@radix-ui/react-form';
 import { Flex } from '@radix-ui/themes';
+import stylez from '@stylezjs/stylez';
 import React from 'react';
 
 import Button from './button';
-import Field from './field/index';
+import Field from './field';
+
+const styles = stylez.create({
+  backgroundColor: 'var(--gray-1)',
+  border: '1px solid var(--gray-5)',
+  borderRadius: '0.625rem',
+});
 
 type FormState =
   | {
@@ -47,11 +54,7 @@ export const Form: _Form = ({
       gapY='1'
       justify='center'
       width={{ initial: '400px', md: '600px' }}
-      style={{
-        backgroundColor: 'var(--gray-1)',
-        border: '1px solid var(--gray-5)',
-        borderRadius: '0.625rem',
-      }}
+      {...stylez.className(styles)}
     >
       <RadixForm.Root action={action} onSubmit={onSubmit}>
         {children}
